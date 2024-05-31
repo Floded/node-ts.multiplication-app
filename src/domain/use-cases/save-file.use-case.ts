@@ -7,7 +7,7 @@ export interface SaveFileUseCase {
 export interface Options {
   fileContent: string;
   fileDestination: string;
-  fileName: string;
+  fileName?: string;
 }
 
 export class SaveFile implements SaveFileUseCase {
