@@ -16,7 +16,8 @@ export class CreateTable implements CreateTebleUserCase {
     let outputMessage = "";
     for (let i = 1; i <= limit; i++) {
       const result = base * i;
-      outputMessage += `${base} x ${i} = ${result}\n`;
+      outputMessage += `${base} x ${i} = ${result}`;
+      if (i < limit) outputMessage += "\n";
     }
     return outputMessage;
   }
