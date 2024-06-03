@@ -26,6 +26,6 @@ export class ServerApp {
       fileName: fileName,
     });
     if (showTable) console.log(table);
-    wasCreated ? console.log("Created....") : console.log("Error created");
+    wasCreated ? console.log("Created....") : console.error("Error created");
   }
 }
